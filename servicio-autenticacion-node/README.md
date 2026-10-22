@@ -103,4 +103,48 @@ Se probaron en Postman los siguientes casos:
 
 ## Estado del despliegue
 
-La API ha sido probada localmente. La publicación en un servidor externo y la configuración de una base de datos de producción son pasos pendientes.
+Estado del proyecto
+
+La API de autenticación fue desarrollada con Node.js y Express, integrada localmente con MySQL y desplegada en Render.
+
+URL pública: https://servicio-autenticacion-sena.onrender.com/
+
+Repositorio: https://github.com/DaviidDL/servicio-autenticacion-sena
+
+Base de datos: MySQL, esquema techdesk.
+
+Script SQL de instalación: techdesk_entrega.sql.
+
+Funcionalidades implementadas
+
+Registro de usuarios.
+
+Inicio de sesión.
+
+Validación de campos obligatorios.
+
+Verificación de correos duplicados.
+
+Almacenamiento de contraseñas mediante hashes bcrypt.
+
+Consulta de usuarios y validación de cuentas activas.
+
+Estado de las pruebas
+
+Las pruebas de registro e inicio de sesión se realizaron localmente con MySQL y obtuvieron las respuestas esperadas.
+
+La API está desplegada en Render y su ruta principal responde correctamente. La conexión de la instancia pública con una base de datos remota queda pendiente de configuración.
+
+Instalación local
+
+Instalar Node.js y MySQL.
+
+Ejecutar techdesk_entrega.sql en MySQL Workbench para crear el esquema y las tablas.
+
+Instalar las dependencias con npm install.
+
+Crear un archivo .env con las variables de conexión a MySQL.
+
+Iniciar la API con npm start.
+
+No publicar el archivo .env, ya que contiene credenciales privadas.
